@@ -3,7 +3,7 @@
   <p>first name : {{ user.firstname }}</p>
   <p>name : {{ user.name }}</p>
   <p>quote : {{ user.quote }}</p>
-  <p [ngClass]="">age : {{ user.age }}</p>
+  <p [class]="ageHidden ? null : 'ageHidden'">age : {{ user.age }}</p>
 
   <input type="text" [value]="user.quote" [(ngModel)]="user.quote" />
   <button (click)="click()">click me</button>
